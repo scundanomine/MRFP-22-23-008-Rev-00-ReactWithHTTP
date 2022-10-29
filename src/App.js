@@ -3,7 +3,7 @@ import About from './mycomponents/About';
 import Home from './mycomponents/Home';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from './mycomponents/Navbar';
-import AboutItem from './mycomponents/AboutItem';
+import RouteParam from './mycomponents/RouteParam';
 
 function App() {
   const a = { color: 'blue' }
@@ -15,8 +15,8 @@ function App() {
         <Routes>
           <Route path='/home' element={<Home />} />
           <Route path='/about' element={<About />}/>
-          <Route path='/about/:ids' element={<About />}/>
-          <Route path='/' element={<AboutItem />} />
+          <Route path='/about/:id' element={<RouteParam />}/>
+          <Route path='/' element={<Home />} />
         </Routes>
       </div>
     </Router>

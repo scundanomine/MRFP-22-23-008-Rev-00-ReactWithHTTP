@@ -5,14 +5,14 @@ class AboutItem extends Component {
         super(props)
 
         this.state = {
-            userId: ""
+            userId: "1"
         }
     }
     
     render() {
         return (
             <div>
-                <h3>About to find {2+2}</h3>
+                <h3>About to find {this.props.uid}</h3>
             </div>
         )
     }
